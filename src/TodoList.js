@@ -34,6 +34,7 @@ class TodoList extends Component {
         })
     }
 
+
     //父组件
   render() {
     return (
@@ -42,7 +43,7 @@ class TodoList extends Component {
             <button style={{background:"#999"}} onClick={this.hhcClick}>add</button>
             <ul>
                 {this.state.list.map((item,index) =>{
-                        //return <li key={index} onClick={this.romeClick.bind(this,index)}>{item}</li>
+                       // return <li key={index} onClick={this.romeClick.bind(this,index)}>{item}</li>
                         return <Todoltem dest={this.romeClick} key={index} content={item} index={index}/>
                     })
                 }
